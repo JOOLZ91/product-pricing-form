@@ -23,7 +23,7 @@ git clone https://github.com/JOOLZ91/product-pricing-form.git
 ### Navigate into the project directory:
 
 ```sh
-cd clicktrans
+cd product-pricing-form
 ```
 
 ### Install dependencies:
@@ -35,7 +35,6 @@ npm install
 ### Run the development server:
 
 ```sh
-npm run serve
+npm run dev
 ```
 
-The application will start on http://localhost:8080/ by default.
