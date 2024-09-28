@@ -1,0 +1,52 @@
+:root {
+  --white: #ffffff;
+  --white-mute: #f2f2f2;
+  --gray: #ddd;
+  --color-text: var(--black-soft);
+  --border-radius: 15px;
+  --box-shadow: 0 0 10px 0px rgba(0, 0, 0, 0.2);
+  --primary-color: #5a0270;
+  --primary-color2: #9d14bf;
+  --danger-color: #af0000;
+  --green-dark: #006400;
+  --green-light: #90ee90;
+  --fs-small: 12px;
+  --fs-normal: 14px;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  font-weight: normal;
+}
+
+body {
+  min-height: 100vh;
+  color: var(--color-text);
+  background: var(--white);
+  display: flex;
+  justify-content: center;
+  transition:
+    color 0.5s,
+    background-color 0.5s;
+  line-height: 1.6;
+  font-family:
+    Inter,
+    -apple-system,
+    BlinkMacSystemFont,
+    'Segoe UI',
+    Roboto,
+    Oxygen,
+    Ubuntu,
+    Cantarell,
+    'Fira Sans',
+    'Droid Sans',
+    'Helvetica Neue',
+    sans-serif;
+  font-size: var(--fs-normal);
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}

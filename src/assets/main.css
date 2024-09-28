@@ -1,0 +1,106 @@
+@import './base.css';
+
+#app {
+  max-width: 1280px;
+  padding: 2rem;
+  font-weight: normal;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+h2 {
+  color: var(--primary-color);
+}
+
+h3 {
+  margin-bottom: 1.5rem;
+  border-bottom: 1px solid var(--gray);
+  padding-bottom: 1.5rem;
+}
+
+h2,
+h3 {
+  width: 100%;
+}
+
+textarea {
+  min-height: 100px;
+  border-color: var(--gray);
+}
+
+input[type='text'],
+select {
+  width: 100%;
+  height: 30px;
+}
+
+select {
+  border-color: var(--gray);
+}
+button {
+  padding: 10px 16px;
+  background-color: var(--primary-color);
+  color: var(--white);
+  border: none;
+  border-radius: 5px;
+  font-size: 14px;
+  font-weight: 400;
+  transition: 0.25s;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+button:hover {
+  background-color: var(--primary-color2);
+}
+
+textarea:focus-visible {
+  outline: var(--primary-color) auto 1px;
+}
+
+/* Loading animation */
+
+.lds-ring,
+.lds-ring div {
+  box-sizing: border-box;
+}
+.lds-ring {
+  display: inline-block;
+  position: relative;
+  width: 80px;
+  height: 80px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.lds-ring div {
+  box-sizing: border-box;
+  display: block;
+  position: absolute;
+  width: 64px;
+  height: 64px;
+  margin: 8px;
+  border: 8px solid currentColor;
+  border-radius: 50%;
+  animation: lds-ring 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+  border-color: currentColor transparent transparent transparent;
+}
+.lds-ring div:nth-child(1) {
+  animation-delay: -0.45s;
+}
+.lds-ring div:nth-child(2) {
+  animation-delay: -0.3s;
+}
+.lds-ring div:nth-child(3) {
+  animation-delay: -0.15s;
+}
+@keyframes lds-ring {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
