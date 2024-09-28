@@ -7,10 +7,10 @@ This project is a simple form that allows users to describe their product, selec
 
 ## Technology Stack
 
-Vue 3
-Pinia
-Axios
-Vue-Router
+- Vue 3
+- Pinia
+- Axios
+- Vue-Router
 
 ## Installation
 
@@ -23,7 +23,7 @@ git clone https://github.com/JOOLZ91/product-pricing-form.git
 ### Navigate into the project directory:
 
 ```sh
-cd product-pricing-form
+cd clicktrans
 ```
 
 ### Install dependencies:
